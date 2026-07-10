@@ -1,5 +1,5 @@
-<title>Zumbah — Field Notes / The Bulletin Desk</title>
-<meta name="description" content="Zumbah — web3 researcher. On-chain field notes, airdrop systems and protocol research. Co-author of the Olympus Blockchain Bulletin." />
+<title>Zumbah · Field Notes / The Bulletin Desk</title>
+<meta name="description" content="Zumbah, web3 researcher. On-chain field notes, airdrop systems and protocol research. Co-author of the Olympus Blockchain Bulletin." />
 <style>
 :root{
   --paper:#eeeae0;
@@ -255,6 +255,17 @@ section:last-of-type{border-bottom:none;}
 .pullquote .thesis-foot{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:1.75rem;}
 .pullquote .thesis-foot .meta{font-family:'MonoJB';font-size:.78rem;color:var(--ink-dim);}
 
+/* record */
+.record-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2.5rem 3rem;}
+.record-card{border-left:4px solid var(--red);padding-left:1.5rem;}
+.record-card .date{font-family:'MonoJB';font-size:.72rem;color:var(--ink-faint);font-variant-numeric:tabular-nums;letter-spacing:.03em;text-transform:uppercase;}
+.record-card blockquote{
+  font-family:'LedgerSerifDisplay';font-style:italic;font-weight:700;
+  font-size:clamp(1.05rem,2vw,1.3rem);line-height:1.42;margin-top:.5rem;text-wrap:balance;
+}
+.record-card .context{font-family:'MonoJB';font-size:.78rem;color:var(--ink-dim);margin-top:.9rem;line-height:1.5;}
+@media (max-width:760px){ .record-grid{grid-template-columns:1fr;} }
+
 /* watchlist */
 .section-sub{color:var(--ink-dim);font-size:.92rem;max-width:52ch;margin-bottom:1.75rem;margin-top:-1.1rem;}
 .watchlist-grid{
@@ -341,19 +352,19 @@ footer a:hover{color:var(--red);}
 
 <div class="ticker-wrap" role="marquee" aria-label="Bulletin highlights">
   <div class="ticker-track">
-    <span>OLYMPUS BLOCKCHAIN BULLETIN — <b>1,300</b> ACTIVE SUBSCRIBERS</span>
+    <span>OLYMPUS BLOCKCHAIN BULLETIN: <b>1,300</b> ACTIVE SUBSCRIBERS</span>
     <span><b>36%</b> AVERAGE OPEN RATE</span>
     <span><b>53%</b> PEAK CLICK-THROUGH</span>
-    <span>LATEST ARTICLE — THE CURSE OF DILUTION</span>
-    <span>PINNED THESIS — WHY CIRCLE'S IPO WILL COOK</span>
-    <span>NOW TRACKING — POLARIS FINANCE</span>
+    <span>LATEST ARTICLE: THE CURSE OF DILUTION</span>
+    <span>PINNED THESIS: WHY CIRCLE'S IPO WILL COOK</span>
+    <span>NOW TRACKING: POLARIS FINANCE</span>
     <span>WATCHED BY ZENECA, ZACHXBT, LOOMDART + 13 MORE</span>
-    <span>OLYMPUS BLOCKCHAIN BULLETIN — <b>1,300</b> ACTIVE SUBSCRIBERS</span>
+    <span>OLYMPUS BLOCKCHAIN BULLETIN: <b>1,300</b> ACTIVE SUBSCRIBERS</span>
     <span><b>36%</b> AVERAGE OPEN RATE</span>
     <span><b>53%</b> PEAK CLICK-THROUGH</span>
-    <span>LATEST ARTICLE — THE CURSE OF DILUTION</span>
-    <span>PINNED THESIS — WHY CIRCLE'S IPO WILL COOK</span>
-    <span>NOW TRACKING — POLARIS FINANCE</span>
+    <span>LATEST ARTICLE: THE CURSE OF DILUTION</span>
+    <span>PINNED THESIS: WHY CIRCLE'S IPO WILL COOK</span>
+    <span>NOW TRACKING: POLARIS FINANCE</span>
     <span>WATCHED BY ZENECA, ZACHXBT, LOOMDART + 13 MORE</span>
   </div>
 </div>
@@ -362,7 +373,7 @@ footer a:hover{color:var(--red);}
   <section id="about">
     <div class="intro-grid">
       <div class="reveal">
-        <p class="lede">I research where the incentives point before the crowd does — then write it up.</p>
+        <p class="lede">I research where the incentives point before the crowd does, then write it up.</p>
         <p>Protocol mechanics, airdrop systems and network onboarding, reported from the contracts and
            points dashboards up. Threads go out on X first; the fuller research runs in the Olympus
            Blockchain Bulletin, co-authored for 1,300+ subscribers.</p>
@@ -485,6 +496,33 @@ footer a:hover{color:var(--red);}
     </div>
   </section>
 
+  <section id="record">
+    <div class="section-head"><h2>On the Record</h2><span class="idxno">4 excerpts</span></div>
+    <p class="section-sub">Unfiltered takes from the server, kept as posted.</p>
+    <div class="record-grid reveal">
+      <div class="record-card">
+        <span class="date">2023-04-08</span>
+        <blockquote>"Is the blockchain really safe once we're actually good at quantum computing?"</blockquote>
+        <p class="context">On RSA encryption, quantum resistance, and whether on-chain data stays safe.</p>
+      </div>
+      <div class="record-card">
+        <span class="date">2023-08-18</span>
+        <blockquote>"I think BTC ETFs get approved, just before the halving, aligned with the US elections."</blockquote>
+        <p class="context">Called five months before spot BTC ETFs were actually approved.</p>
+      </div>
+      <div class="record-card">
+        <span class="date">2023-10-10</span>
+        <blockquote>"I know where I lie, and you should too. This is make or break."</blockquote>
+        <p class="context">On the 2023 to 2025 cycle, reading BTC as a forward looking indicator.</p>
+      </div>
+      <div class="record-card">
+        <span class="date">2025-10-29</span>
+        <blockquote>"Most web3 companies have a workaround for anything TradFi: become the custodian IRL, represent the asset as a tokenised receipt on the dApp."</blockquote>
+        <p class="context">On Hyperliquid, spot equity, and how TradFi actually gets on-chain.</p>
+      </div>
+    </div>
+  </section>
+
   <section id="watchlist">
     <div class="section-head"><h2>The Watchlist</h2><span class="idxno">16 names</span></div>
     <p class="section-sub">A few of the researchers, founders and traders keeping an eye on the research.</p>
@@ -544,7 +582,7 @@ footer a:hover{color:var(--red);}
     <div class="bulletin-block reveal">
       <div>
         <h2>Subscribe to the Bulletin</h2>
-        <p>Co-authored research on airdrops, incentive design and where to be early — every issue.</p>
+        <p>Co-authored research on airdrops, incentive design and where to be early, every issue.</p>
       </div>
       <a class="btn solid" href="https://olympus-blockchain-bulletin.beehiiv.com/" target="_blank" rel="noopener noreferrer">Subscribe Free →</a>
     </div>
@@ -573,7 +611,7 @@ footer a:hover{color:var(--red);}
 </main>
 
 <footer>
-  <div>Zumbah — Field Notes on Web3. Updates when the record does.</div>
+  <div>Zumbah · Field Notes on Web3. Updates when the record does.</div>
   <div class="foot-links">
     <a href="https://x.com/zumbah" target="_blank" rel="noopener noreferrer">X / @zumbah</a>
     <a href="https://olympus-blockchain-bulletin.beehiiv.com/" target="_blank" rel="noopener noreferrer">The Bulletin</a>
