@@ -246,10 +246,16 @@ section:last-of-type{border-bottom:none;}
 .ledger tbody td.go a{font-family:'MonoJB';font-size:.78rem;}
 @media (max-width:720px){
   .ledger thead{display:none;}
-  .ledger tbody td{display:block;padding:.15rem .75rem;}
-  .ledger tbody tr{padding:.85rem 0;display:block;}
-  .ledger tbody td.entry{font-size:1.1rem;padding-top:.5rem;}
-  .ledger tbody td.go{text-align:left;padding-bottom:.6rem;}
+  .ledger tbody tr{
+    display:flex;flex-wrap:wrap;align-items:baseline;
+    padding:.85rem 0;
+  }
+  .ledger tbody td{padding:0 .75rem 0 0;text-align:left;}
+  .ledger tbody td.idx{order:1;}
+  .ledger tbody td.date{order:2;}
+  .ledger tbody td.entry{order:3;flex:0 0 100%;font-size:1.1rem;padding-top:.5rem;padding-right:.75rem;}
+  .ledger tbody td.cat{order:4;flex:0 0 100%;padding-top:.3rem;}
+  .ledger tbody td.go{order:5;flex:0 0 100%;padding-top:.6rem;}
 }
 
 /* thesis pull quote */
